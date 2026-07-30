@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Site Ledger</title>
+<meta name="description" content="Offline-first cash expense tracker for fit-out projects.">
+
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F4F3F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1216" media="(prefers-color-scheme: dark)">
+
+<!-- iOS add-to-home-screen -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Site Ledger">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192">
+
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="root">
+    <main id="app" class="screen"></main>
+    <nav id="tabbar"></nav>
+  </div>
+  <div id="overlay"></div>
+  <div id="toast-host"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

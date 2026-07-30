@@ -1,0 +1,118 @@
+// English + Arabic strings, ported from the iOS app's L10n. The in-app toggle
+// switches instantly (and flips layout direction to RTL for Arabic).
+
+export const SUGGESTED = {
+  en: ['Labor', 'Materials', 'Tools / Rental', 'Transport', 'Fees', 'Ne2asha', 'Sabaka', 'Kahraba', 'Naggara', 'Gypsum', 'Marble'],
+  ar: ['عمالة', 'خامات', 'عدة / إيجار', 'نقل', 'أتعاب', 'نقاشة', 'سباكة', 'كهرباء', 'نجارة', 'جبس', 'رخام'],
+};
+
+const EN = {
+  units: 'Units', reports: 'Reports', workers: 'Workers', more: 'More',
+  siteLog: 'Site log', greeting: 'Good morning', totalSpent: 'Total spent',
+  thisWeek: 'This week', thisMonth: 'This month', activeUnits: 'Units', newUnit: 'New unit', total: 'Total',
+  noUnitsTitle: 'No units yet', noUnitsBody: 'Add your first unit to start logging cash payments on site.',
+  addFirstUnit: 'Add your first unit', loadSample: 'Load sample data',
+  noBudget: 'No budget set', byCategory: 'By category', workersOnUnit: 'Workers paid',
+  expenses: 'Expenses', noExpTitle: 'No expenses yet',
+  noExpBody: 'Tap the + button to log the first cash payment on this unit.',
+  edit: 'Edit', delete: 'Delete',
+  addExpense: 'Add expense', editExpense: 'Edit expense', chooseUnit: 'Choose unit', chooseCategory: 'Category',
+  uncategorized: 'Uncategorized', searchOrCreate: 'Search or create a category', cash: 'Cash', transfer: 'Transfer',
+  addWorker: 'Worker paid (optional)', addNote: 'Note (optional)', photo: 'Add photo', photoAdded: 'Photo attached',
+  save: 'Save payment', moreDetails: 'Worker · note · photo', lessDetails: 'Hide details',
+  paidToDate: 'Paid to date', payments: 'Payments', noWorkersTitle: 'No workers yet',
+  noWorkersBody: 'Workers appear here once you attach a name to a payment.',
+  week: 'This week', month: 'This month', byUnit: 'By unit',
+  language: 'Language — عربي', switchLang: 'التبديل للعربية',
+  startEmpty: 'Reset to empty', alreadyUsedHint: 'Also used on other units:',
+  newUnitTitle: 'New unit', editUnitTitle: 'Edit unit', unitName: 'Unit name', unitNamePh: 'e.g. Sha2et Zamalek',
+  clientName: 'Client', clientNamePh: 'e.g. Nadia Hosny', budgetOpt: 'Budget (optional)', categories: 'Categories',
+  suggested: 'Suggested', addCategory: 'Add a category', cancel: 'Cancel', saveShort: 'Save',
+  subcategories: 'Subcategories', addSubcategory: 'Add a subcategory',
+  shareBtn: 'Share', shareStatement: 'Share statement', paymentStatement: 'Payment statement',
+  allTime: 'All payments', monthOnly: 'This month', shareNow: 'Share', printPdf: 'Print / PDF', copyText: 'Copy summary',
+  enterAmount: 'Enter an amount', saved: 'Saved', unitSaved: 'Unit saved',
+  markDone: 'Mark done', markActive: 'Mark active', deleteUnit: 'Delete unit',
+  deleteUnitConfirm: 'Delete this unit?',
+  deleteUnitBody: 'This removes the unit and all its payments and categories. This can\'t be undone.',
+  deleteCatTitle: 'Delete category?',
+  deleteCatBody: 'payments in this category will move to Uncategorized.',
+  today: 'Today', yesterday: 'Yesterday', swipeHint: 'Swipe a row',
+  loadedSample: 'Sample data loaded', resetDone: 'Reset to empty', copied: 'Summary copied', deleted: 'Deleted',
+  resetConfirmTitle: 'Erase all data?',
+  resetConfirmBody: 'This permanently deletes every unit, payment, category and worker stored on this device. This can\'t be undone.',
+  resetConfirmBtn: 'Erase everything',
+  sampleConfirmTitle: 'Replace with sample data?',
+  sampleConfirmBody: 'This erases everything currently stored on this device and replaces it with the demo dataset. This can\'t be undone.',
+  sampleConfirmBtn: 'Replace data',
+  painter: 'Painter', plumber: 'Plumber', electrician: 'Electrician', carpenter: 'Carpenter',
+  gypsum: 'Gypsum', other: 'Other', allUnits: 'All units',
+  all: 'All', noSubcategory: 'No subcategory', paymentHistory: 'Payment history',
+  noPaymentsHere: 'No payments in this selection yet.',
+  entries: 'entries', categoriesCount: 'categories', ofBudget: 'of budget', over: 'Over',
+  noSpend: 'No spend in this period', across: 'Across', thisWeekLower: 'this week',
+  theme: 'Appearance', themeSystem: 'System', themeLight: 'Light', themeDark: 'Dark',
+  install: 'Install', installHint: 'Add Site Ledger to your home screen',
+  offlineReady: 'Ready to work offline',
+};
+
+const AR = {
+  units: 'الوحدات', reports: 'التقارير', workers: 'العمّال', more: 'المزيد',
+  siteLog: 'سجل الموقع', greeting: 'صباح الخير', totalSpent: 'إجمالي المصروف',
+  thisWeek: 'هذا الأسبوع', thisMonth: 'هذا الشهر', activeUnits: 'وحدات', newUnit: 'وحدة جديدة', total: 'الإجمالي',
+  noUnitsTitle: 'لا توجد وحدات بعد', noUnitsBody: 'أضِف أول وحدة لتبدأ تسجيل المدفوعات النقدية في الموقع.',
+  addFirstUnit: 'أضف أول وحدة', loadSample: 'تحميل بيانات تجريبية',
+  noBudget: 'لا توجد ميزانية', byCategory: 'حسب البند', workersOnUnit: 'العمّال المدفوع لهم',
+  expenses: 'المصروفات', noExpTitle: 'لا مصروفات بعد',
+  noExpBody: 'اضغط زر + لتسجيل أول دفعة نقدية على هذه الوحدة.',
+  edit: 'تعديل', delete: 'حذف',
+  addExpense: 'إضافة مصروف', editExpense: 'تعديل المصروف', chooseUnit: 'اختر الوحدة', chooseCategory: 'البند',
+  uncategorized: 'بدون بند', searchOrCreate: 'ابحث أو أنشئ بندًا', cash: 'نقدي', transfer: 'تحويل',
+  addWorker: 'العامل (اختياري)', addNote: 'ملاحظة (اختياري)', photo: 'إضافة صورة', photoAdded: 'تم إرفاق صورة',
+  save: 'حفظ الدفعة', moreDetails: 'عامل · ملاحظة · صورة', lessDetails: 'إخفاء التفاصيل',
+  paidToDate: 'المدفوع حتى الآن', payments: 'المدفوعات', noWorkersTitle: 'لا يوجد عمّال بعد',
+  noWorkersBody: 'يظهر العمّال هنا عند إضافة اسم إلى الدفعة.',
+  week: 'هذا الأسبوع', month: 'هذا الشهر', byUnit: 'حسب الوحدة',
+  language: 'اللغة — English', switchLang: 'Switch to English',
+  startEmpty: 'إعادة تعيين فارغ', alreadyUsedHint: 'مستخدم أيضًا في وحدات أخرى:',
+  newUnitTitle: 'وحدة جديدة', editUnitTitle: 'تعديل الوحدة', unitName: 'اسم الوحدة', unitNamePh: 'مثال: شقة الزمالك',
+  clientName: 'العميل', clientNamePh: 'مثال: نادية حسني', budgetOpt: 'الميزانية (اختياري)', categories: 'البنود',
+  suggested: 'مقترحة', addCategory: 'أضف بندًا', cancel: 'إلغاء', saveShort: 'حفظ',
+  subcategories: 'بنود فرعية', addSubcategory: 'أضف بندًا فرعيًا',
+  shareBtn: 'مشاركة', shareStatement: 'مشاركة كشف الحساب', paymentStatement: 'كشف مدفوعات',
+  allTime: 'كل المدفوعات', monthOnly: 'هذا الشهر', shareNow: 'مشاركة', printPdf: 'طباعة / PDF', copyText: 'نسخ الملخص',
+  enterAmount: 'أدخل المبلغ', saved: 'تم حفظ', unitSaved: 'تم حفظ الوحدة',
+  markDone: 'وضع كمكتملة', markActive: 'إعادة تنشيط', deleteUnit: 'حذف الوحدة',
+  deleteUnitConfirm: 'حذف هذه الوحدة؟',
+  deleteUnitBody: 'سيؤدي هذا إلى حذف الوحدة وكل مدفوعاتها وبنودها. لا يمكن التراجع.',
+  deleteCatTitle: 'حذف البند؟',
+  deleteCatBody: 'دفعة في هذا البند سيتم نقلها إلى بدون بند.',
+  today: 'اليوم', yesterday: 'أمس', swipeHint: 'اسحب للتعديل',
+  loadedSample: 'تم تحميل البيانات التجريبية', resetDone: 'تم إعادة التعيين', copied: 'تم نسخ الملخص', deleted: 'تم الحذف',
+  resetConfirmTitle: 'مسح كل البيانات؟',
+  resetConfirmBody: 'سيؤدي هذا إلى حذف كل الوحدات والمدفوعات والبنود والعمّال المحفوظة على هذا الجهاز نهائيًا. لا يمكن التراجع.',
+  resetConfirmBtn: 'مسح كل شيء',
+  sampleConfirmTitle: 'استبدال بالبيانات التجريبية؟',
+  sampleConfirmBody: 'سيؤدي هذا إلى مسح كل البيانات الحالية على هذا الجهاز واستبدالها بالبيانات التجريبية. لا يمكن التراجع.',
+  sampleConfirmBtn: 'استبدال البيانات',
+  painter: 'نقّاش', plumber: 'سبّاك', electrician: 'كهربائي', carpenter: 'نجّار',
+  gypsum: 'جبس', other: 'أخرى', allUnits: 'كل الوحدات',
+  all: 'الكل', noSubcategory: 'بدون بند فرعي', paymentHistory: 'سجل المدفوعات',
+  noPaymentsHere: 'لا مدفوعات في هذا التحديد بعد.',
+  entries: 'دفعة', categoriesCount: 'بنود', ofBudget: 'من الميزانية', over: 'تجاوز',
+  noSpend: 'لا بيانات في هذه الفترة', across: 'عبر', thisWeekLower: 'هذا الأسبوع',
+  theme: 'المظهر', themeSystem: 'النظام', themeLight: 'فاتح', themeDark: 'داكن',
+  install: 'تثبيت', installHint: 'أضف التطبيق إلى شاشتك الرئيسية',
+  offlineReady: 'جاهز للعمل دون إنترنت',
+};
+
+const TABLES = { en: EN, ar: AR };
+
+export function makeT(lang) {
+  const table = TABLES[lang] || EN;
+  return (key) => (key in table ? table[key] : (EN[key] !== undefined ? EN[key] : key));
+}
+
+export function suggestedFor(lang) {
+  return SUGGESTED[lang] || SUGGESTED.en;
+}
