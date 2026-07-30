@@ -1,12 +1,17 @@
 # Site Ledger — PWA
 
+**Live: https://dukeamr1.github.io/SiteLedgerWeb/**
+
 The web version of Site Ledger: an installable, **offline-first** expense tracker
 for fit-out projects. Same Par Ankh design, same features as the iOS app — but it
 runs in any modern browser and stores everything **on the device, in the browser**.
 
 No backend. No login. No network required after first load.
 
-## Run it
+Responsive: a phone-style single column with a floating tab bar on mobile, and a
+sidebar + multi-column dashboard on desktop.
+
+## Run it locally
 
 Any static file server works (a server is required — service workers and ES
 modules don't work from `file://`):
@@ -16,6 +21,15 @@ cd SiteLedgerWeb && python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
+
+## Deploying
+
+The site is served by **GitHub Pages** from `main` at the repository root — push
+to `main` and it redeploys automatically (usually under a minute).
+
+All paths are relative and `.nojekyll` is committed, so the app works correctly
+from the `/SiteLedgerWeb/` sub-path. When shipping changed assets, bump `CACHE`
+in `sw.js` so returning visitors get the new files instead of the cached ones.
 
 ## Install on a phone
 
@@ -39,7 +53,9 @@ whole app shell (HTML/CSS/JS/fonts/icons) and all data is local.
 - Photos are downscaled to max 1280px JPEG before being stored.
 
 Data lives only in that browser profile. Clearing site data wipes it; there is no
-cloud copy. "Reset to empty" and "Load sample data" are in the **⋯ More** sheet.
+cloud copy. "Reset to empty" and "Load sample data" are in the **⋯ More** sheet —
+both destroy existing data, so both ask for confirmation first (skipped when the
+store is already empty).
 
 ## Features
 
